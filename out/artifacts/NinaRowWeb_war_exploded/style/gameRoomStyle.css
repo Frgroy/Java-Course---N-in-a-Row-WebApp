@@ -1,0 +1,105 @@
+body{
+    background-image: url(4in_a_row_background.jpg);
+    background-size: 120%;
+    background-position: center;
+    background-position-x: 0px ;
+}
+
+.container {
+    width: 95%;
+}
+
+.gameheader{
+     border-collapse: collapse;
+     background: darkslateblue;
+     width: 100%;
+     float: bottom;
+     margin-bottom: 22px;
+}
+
+.gameheader h2{
+    font-family: Gabriola;
+    text-align:center;
+    font-weight: bolder;
+    color: yellow;
+    font-size: 50px;
+}
+
+.gameheader h3{
+    font-family: Gabriola;
+    text-align:center;
+    color: yellow;
+    font-size: 28px;
+}
+
+.gameproperties {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 22px;
+    background-color: darkslateblue;
+}
+
+.boardcontainer{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.playertable{
+    border-collapse: collapse;
+    width: 40%;
+    float: bottom;
+    margin: inherit;
+}
+
+.gameproperties label{
+    font-family: Gabriola;
+    font-size: 20px;
+    color: white
+}
+
+#status {
+    font-family: Tahoma !important;
+    font-size: 30px !important;
+    color: yellow !important;
+}
+
+.playertable th {
+    text-align: left;
+    background-color: mediumpurple;
+    color: white;
+    padding: 4px 30px 4px 8px;
+}
+
+.playertable td {
+    padding: 4px 8px;
+    background-color: lavender;
+    color: black;
+}
+
+.playertable tr:nth-child(odd) td {
+    padding: 4px 8px;
+    background-color: lavenderblush;
+    color: black;
+}
+
+.board {
+    pointer-events: auto;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    background-color: darkslateblue;
+    display: inline-block;
+    overflow: auto;
+}
+
+.board td {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    min-width: 50px;
+    white-space: nowrap;
+}

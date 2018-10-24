@@ -1,0 +1,86 @@
+body{
+    background-image: url(4in_a_row_background.jpg);
+    background-size: 120%;
+    background-position: center;
+    background-position-x: 0px ;
+}
+
+.container {
+    width: 95%;
+}
+
+.games-table{
+    border-collapse: collapse;
+    background: darkslateblue;
+    width: 70%;
+    float: left;
+    margin: inherit;
+    height: 90%;
+    display: inline-block;
+}
+
+.users-table{
+    border-collapse: collapse;
+    background: darkslateblue;
+    margin-left: 75%;
+    height: 90%;
+}
+
+.users-table h3{
+    font-family: Gabriola;
+    font-weight: bolder;
+    color: yellow;
+    font-size: 45px;
+}
+
+.users-table li{
+    font-family: Gabriola;
+    color: white;
+    font-size: 26px;
+}
+
+.games-table h1{
+     font-family: Gabriola;
+     font-weight: bolder;
+     color: yellow;
+     margin: 0 0 0 0;
+     font-size: 55px;
+     position: relative;
+ }
+
+.gametable {
+    overflow: hidden;
+}
+
+.gametable th {
+    text-align: left;
+    background-color: mediumpurple;
+    color: white;
+    padding: 4px 30px 4px 8px;
+}
+
+.gametable td {
+    padding: 4px 8px;
+    background-color: lavender;
+    color: black;
+}
+.gametable tr:nth-child(odd) td {
+    padding: 4px 8px;
+    background-color: lavenderblush;
+    color: black;
+}
+
+.upload {
+    font-family: Gabriola;
+    font-weight: bolder;
+    color: yellow;
+    font-size: 20px;
+    position: relative;
+}
+
+.fileinput {
+    font-family: Gabriola;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}

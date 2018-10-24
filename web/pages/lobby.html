@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Lobby</title>
+    <link rel="stylesheet" href="../style/lobbyStyle.css">
+    <script src="../utils/JQuery3.3.1min.js"></script>
+    <script src="../utils/context-path-helper.js"></script>
+    <script src="../scripts/lobby.js"></script>
+</head>
+<body>
+<section class="container">
+    <div class="games-table">
+        <form id="uploadform" action="loadgame" enctype="multipart/form-data">
+            <span class="upload">Upload Game:</span>
+            <input id="file" type="file" class="fileinput" accept="text/xml" name="file" required>
+            <input type = "submit" value="Load"/>
+            <div id="result"></div>
+        </form>
+        <form method="GET" id="joingames" action="joingame">
+            <h1>Game's table:</h1>
+        <table class="gametable">
+            <tr>
+                <th>Name</th>
+                <th>Creator</th>
+                <th>Status</th>
+                <th>Board</th>
+                <th>Target</th>
+                <th>Variant</th>
+                <th>Players</th>
+                <th>Options</th>
+            </tr>
+            <tbody id="gameslist"></tbody>
+        </table>
+        </form>
+    </div>
+    <div class="users-table">
+        <h3>Users:</h3>
+        <ul id="userslist"></ul>
+        <form method="GET" id="logout" action="logout">
+            <input type = "submit" value="Log Out"/>
+        </form>
+    </div>
+</section>
+</body>
+</html>

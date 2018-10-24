@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/gameRoomStyle.css">
+    <script src="../utils/JQuery3.3.1min.js"></script>
+    <script src="../utils/context-path-helper.js"></script>
+    <script src="../scripts/gameRoom.js"></script>
+    <title>Game Room</title>
+</head>
+<body>
+<section class="container">
+    <div class="gameheader" id="gameheader">
+    </div>
+    <div class="gameproperties" id="gameproperties">
+        <input type ="radio" id = "popin" name = "moveType" value="popin" style="visibility: hidden" checked name="Pop In!"/>
+        <label id="popoutlabel" for="popin" style="visibility: hidden"> Pop In! </label>
+        <input type ="radio" id = "popout" name = "moveType" value="popout" style="visibility: hidden" name="Pop Out!"/>
+        <label id="popinlabel" for="popout" style="visibility: hidden"> Pop Out! </label><br/>
+        <label id="status"></label><br/>
+    </div>
+    <div class="boardcontainer" id="boardcontainer">
+    </div>
+    <div class="playertable" id="playertable">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Turns Played</th>
+                <th>Color</th>
+                <th>Type</th>
+            </tr>
+            <tbody id="playersList"></tbody>
+        </table>
+        <form method="GET" id="quitgame" action="quitgame">
+            <input type = "submit" value="Quit Game"/>
+        </form>
+    </div>
+</section>
+</body>
+</html>
